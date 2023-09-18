@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video sharing website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h2 class="log">
+                social indigo
+            </h2>
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="search for creators,inspiration, and projects">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">create</label>
+                <div class="profile-photo">
+                    <img src="profile5.jpg">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!------------MAIN------------>
+    <main>
+        <div class="container">
+            <!--=================LEFT=====================-->
+            <div class="left">
+                <a class="profile">
+                    <div class="profile-photo">
+                        <img src="profile5.jpg">
+                    </div>
+                    <div class="handle">
+                        <h4>gaurav singh</h4>
+                        <p class="text-muted">
+                            @gays
+                        </p>
+                    </div>
+                </a>
+                <!--==========SIDEBAR===============-->
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i class="fa-solid fa-house"></i></span><h3>Home</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fa-solid fa-compass"></i></span><h3>Explore</h3>
+                    </a>
+                       <a class="menu-item" id="notifications">
+                        <span><i class="fa-solid fa-bell"><small class="notification-count">9+</small></i></span><h3>Notification</h3>
+                        <!---===========NOTIFICATION POPUP===============-->
+                          <div class="notification-popup">
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="profile4.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b> amit nodela </b> accept your friend request
+                                    <small class="text-muted">2day ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="profile1.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b> srk sumit </b> accept your friend request
+                                    <small class="text-muted">3 hour ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="profile2.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b> rohit jaiswal </b> comment on your post
+                                    <small class="text-muted"> 2 hour ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="profile3.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b> durgesh singh </b> comment on your post
+                                    <small class="text-muted">1 hour ago</small>
+                                </div>
+                            </div>
+                          </div>
+                          <!---===========NOTIFICATION POPUP===============-->
+                       </a>
+                    <a class="menu-item" id="message-notifications">
+                         <span><i class="fa-solid fa-message"><small class="notification-count">6</small></i></span><h3>Massagse</h3>
+                    </a>
+                        <a class="menu-item"><span><i class="fa-solid fa-bookmark"></i></span><h3>Bookmark</h3>
+                        </a>
+                     <a class="menu-item">
+                        <span><i class="fa-solid fa-chart-line"></i></span><h3>Analytics</h3>
+                     </a>   
+                    <a class="menu-item">
+                        <span><i class="fa-brands fa-themeco"></i></span><h3>Theme</h3>
+                    </a>
+                     <a class="menu-item">
+                        <span><i class="fa-solid fa-ellipsis"></i></span><h3>Setting</h3>
+                     </a>
+                </div>
+                <!---===========END OF SIDEBAR===============-->
+                <label class="btn btn-primary" for="create-post">Create post</label>
+            </div>
+            <!---===========END OF LEFT===============-->
+
+
+            <!--===================MIDDLE=======================-->
+            <div class="middle">
+                <!---===========--------STORIES----------===============-->
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="profile6.jpg">
+                        </div>
+                        <p class="name">your story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="profile7.jpg">
+                        </div>
+                        <p class="name">vidhut yadav</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="profile8.jpg">
+                        </div>
+                        <p class="name">ramendra balli</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="profile9.png">
+                        </div>
+                        <p class="name">aditya jadeda</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="profile10 (1).jpg">
+                        </div>
+                        <p class="name">kohli lali</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="profile10 (2).jpg">
+                        </div>
+                        <p class="name">randu fhadiya</p>
+                    </div>
+                </div>
+                 <!---=================END OF STORY=======================--->
+                 <form class="create-post">
+                    <div class="profile-photo">
+                        <img src="profile5.jpg">
+                    </div>
+                    <input type="text" placeholder="what's your mind, gaurav" id="create-post">
+                    <input type="submit" value="post" class="btn btn-primary">
+                 </form>
+               <!------------------------FEED----------------------------->
+               <div class="feeds">
+                <!------------------------FEED 1----------------------------->
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-photo">
+                                <img src="feed/feed1.jpg">
+                            </div>
+                            <div class="info">
+                                <h3>Lana Rose</h3>
+                                <small>israel, 15 MINUTES AGO</small>
+                            </div>
+                        </div>
+                        <span class="edit">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                    </div>
+                    <div class="photo">
+                        <img src="feed/feed01.webp">
+                    </div>
+
+                    <div class="action-button">
+                        <div class="interaction-buttons">
+                           <span><i class="fa-solid fa-heart"></i></span>
+                           <span><i class="fa-regular fa-comment"></i></span>
+                           <span><i class="fa-solid fa-share-nodes"></i></span>
+                        </div>
+                        <div class="bookmark">
+                           <span><i class="fa-regular fa-bookmark"></i></span>
+                        </div>
+                    </div>
+                    <div class="liked-by">
+                        <span><img src="profile10 (3).jpg"></span>
+                        <span><img src="profile10 (1).jpg"></span>
+                        <span><img src="profile10 (2).jpg"></span>
+                        <p>liked by <b>Ernest Achiever</b>and <b>8,256 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p> <b>Lana Rose</b> Loren ipsum dolor sit quisquameius. 
+                            <span class="hash-tag">#Lifestyle</span>
+                        </p>
+                    </div>
+                    <div class=" comments text-muted">
+                        veiw all 981 comments
+                    </div>
+                </div>
+
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-photo">
+                                <img src="feed/feed02.jpg">
+                            </div>
+                            <div class="info">
+                                <h3>Aditi singh</h3>
+                                <small>lucknow, 1 HOUR AGO</small>
+                            </div>
+                        </div>
+                        <span class="edit">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                    </div>
+                    <div class="photo">
+                        <img src="feed/feed02.jpg">
+                    </div>
+
+                    <div class="action-button">
+                        <div class="interaction-buttons">
+                           <span><i class="fa-solid fa-heart"></i></span>
+                           <span><i class="fa-regular fa-comment"></i></span>
+                           <span><i class="fa-solid fa-share-nodes"></i></span>
+                        </div>
+                        <div class="bookmark">
+                           <span><i class="fa-regular fa-bookmark"></i></span>
+                        </div>
+                    </div>
+                    <div class="liked-by">
+                        <span><img src="profile10 (1).jpg"></span>
+                        <span><img src="profile9.png"></span>
+                        <span><img src="profile3.jpg"></span>
+                        <p>liked by <b>official_himanshu_thakur</b>and <b>5,209 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p> <b>Aditi singh</b> no man left behind.
+                            <span class="hash-tag">#idf #india #love #cat #likeforlike #followforfollow</span>
+                        </p>
+                    </div>
+                    <div class=" comments text-muted">
+                        veiw all 1,209 comments
+                    </div>
+                </div>
+                
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-photo">
+                                <img src="feed/feed03.jpg">
+                            </div>
+                            <div class="info">
+                                <h3>Melissa chapman</h3>
+                                <small>france, 1 HOUR AGO</small>
+                            </div>
+                        </div>
+                        <span class="edit">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                    </div>
+                    <div class="photo">
+                        <img src="feed/feed2.jpg">
+                    </div>
+
+                    <div class="action-button">
+                        <div class="interaction-buttons">
+                           <span><i class="fa-solid fa-heart"></i></span>
+                           <span><i class="fa-regular fa-comment"></i></span>
+                           <span><i class="fa-solid fa-share-nodes"></i></span>
+                        </div>
+                        <div class="bookmark">
+                           <span><i class="fa-regular fa-bookmark"></i></span>
+                        </div>
+                    </div>
+                    <div class="liked-by">
+                        <span><img src="profile6.jpg"></span>
+                        <span><img src="profile5.jpg"></span>
+                        <span><img src="profile7.jpg"></span>
+                        <p>liked by <b>officialmgphotos</b>and <b>4,256 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p> <b>Melissa chapman</b> are you ready to try
+                            <span class="hash-tag">#medicalmrijuana ? @veriheal 3veriheal</span>
+                        </p>
+                    </div>
+                    <div class=" comments text-muted">
+                        veiw all 1,097 comments
+                    </div>
+                </div>
+
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-photo">
+                                <img src="feed/feed6.jpg">
+                            </div>
+                            <div class="info">
+                                <h3>Noa Kirel</h3>
+                                <small>israel, 2 HOUR AGO</small>
+                            </div>
+                        </div>
+                        <span class="edit">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                    </div>
+                    <div class="photo">
+                        <img src="feed/feed3.jpg">
+                    </div>
+
+                    <div class="action-button">
+                        <div class="interaction-buttons">
+                           <span><i class="fa-solid fa-heart"></i></span>
+                           <span><i class="fa-regular fa-comment"></i></span>
+                           <span><i class="fa-solid fa-share-nodes"></i></span>
+                        </div>
+                        <div class="bookmark">
+                           <span><i class="fa-regular fa-bookmark"></i></span>
+                        </div>
+                    </div>
+                    <div class="liked-by">
+                        <span><img src="profile7.jpg"></span>
+                        <span><img src="profile9.png"></span>
+                        <span><img src="profile8.jpg"></span>
+                        <p>liked by <b>annazak12</b>and <b>13,539 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p> <b>Noa Kirel</b> Loren ipsum dolor sit quisquameius. 
+                            <span class="hash-tag">#favirout #kilbht #tilatj</span>
+                        </p>
+                    </div>
+                    <div class=" comments text-muted">
+                        veiw all 3,856 comments
+                    </div>
+                </div>
+
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-photo">
+                                <img src="profile4.jpg">
+                            </div>
+                            <div class="info">
+                                <h3>Ritesh Adwani</h3>
+                                <small>mumbai, 2 HOUR AGO</small>
+                            </div>
+                        </div>
+                        <span class="edit">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                    </div>
+                    <div class="photo">
+                        <img src="feed/feed10.jpg">
+                    </div>
+
+                    <div class="action-button">
+                        <div class="interaction-buttons">
+                           <span><i class="fa-solid fa-heart"></i></span>
+                           <span><i class="fa-regular fa-comment"></i></span>
+                           <span><i class="fa-solid fa-share-nodes"></i></span>
+                        </div>
+                        <div class="bookmark">
+                           <span><i class="fa-regular fa-bookmark"></i></span>
+                        </div>
+                    </div>
+                    <div class="liked-by">
+                        <span><img src="story2.png"></span>
+                        <span><img src="story3.jpg"></span>
+                        <span><img src="stpry4.jpg"></span>
+                        <p>liked by <b>Pramesh Lothiya </b>and <b>6,712 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p> <b>Ritesh Adwani</b> Life is not a simple, becoz everyone is enemy 
+                            <span class="hash-tag">#hatters #lover #final #panjabi</span>
+                        </p>
+                    </div>
+                    <div class=" comments text-muted">
+                        veiw all 2,712 comments
+                    </div>
+                </div>
+
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-photo">
+                                <img src="feed/feed4.jpg">
+                            </div>
+                            <div class="info">
+                                <h3>Britta Laina</h3>
+                                <small>france, 3 HOUR AGO</small>
+                            </div>
+                        </div>
+                        <span class="edit">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                    </div>
+                    <div class="photo">
+                        <img src="feed/feed04.jpg">
+                    </div>
+
+                    <div class="action-button">
+                        <div class="interaction-buttons">
+                           <span><i class="fa-solid fa-heart"></i></span>
+                           <span><i class="fa-regular fa-comment"></i></span>
+                           <span><i class="fa-solid fa-share-nodes"></i></span>
+                        </div>
+                        <div class="bookmark">
+                           <span><i class="fa-regular fa-bookmark"></i></span>
+                        </div>
+                    </div>
+                    <div class="liked-by">
+                        <span><img src="story5.jpg"></span>
+                        <span><img src="stpry4.jpg"></span>
+                        <span><img src="story3.jpg"></span>
+                        <p>liked by <b>Astro Adriana</b>and <b>14,537 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p> <b>Ritesh Adwani</b> in 1912, a model is called the aero hydroplane donnet-laveque-Denhaut or hydroaeroplane Donnet-leveque.it is eqquiped with two floats at the wingtips,which allows it to distibute the load. the waterline also changes with speed and allows it to take off in 40 or 50 meters. 
+                            <span class="hash-tag">#parissecret</span>
+                        </p>
+                    </div>
+                    <div class=" comments text-muted">
+                        veiw all 3,217 comments
+                    </div>
+                </div>
+
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-photo">
+                                <img src="feed/feed0.1.jpg">
+                            </div>
+                            <div class="info">
+                                <h3>Adarsh Jaiswal</h3>
+                                <small>jaipur, 2 DAY AGO</small>
+                            </div>
+                        </div>
+                        <span class="edit">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                    </div>
+                    <div class="photo">
+                        <img src="feed/feed0.2.jpg">
+                    </div>
+
+                    <div class="action-button">
+                        <div class="interaction-buttons">
+                           <span><i class="fa-solid fa-heart"></i></span>
+                           <span><i class="fa-regular fa-comment"></i></span>
+                           <span><i class="fa-solid fa-share-nodes"></i></span>
+                        </div>
+                        <div class="bookmark">
+                           <span><i class="fa-regular fa-bookmark"></i></span>
+                        </div>
+                    </div>
+                    <div class="liked-by">
+                        <span><img src="story6.jpg"></span>
+                        <span><img src="profile12.jpg"></span>
+                        <span><img src="profile11.jpg"></span>
+                        <p>liked by <b>Jitendra Ojha</b>and <b>4,327 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p> <b>Adarsh Jaiswal</b> love is not a everything, but you remember money is everything
+                            <span class="hash-tag">#love_nothing #money #love_hatters #foolowforfollow</span>
+                        </p>
+                    </div>
+                    <div class=" comments text-muted">
+                        veiw all 1,712 comments
+                    </div>
+                </div>
+
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-photo">
+                                <img src="feed/feed0.1.jpg">
+                            </div>
+                            <div class="info">
+                                <h3>Adarsh Jaiswal</h3>
+                                <small>Rajisthan, 2 DAY AGO</small>
+                            </div>
+                        </div>
+                        <span class="edit">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                    </div>
+                    <div class="photo">
+                        <img src="feed/feed0.3.jpg">
+                    </div>
+
+                    <div class="action-button">
+                        <div class="interaction-buttons">
+                           <span><i class="fa-solid fa-heart"></i></span>
+                           <span><i class="fa-regular fa-comment"></i></span>
+                           <span><i class="fa-solid fa-share-nodes"></i></span>
+                        </div>
+                        <div class="bookmark">
+                           <span><i class="fa-regular fa-bookmark"></i></span>
+                        </div>
+                    </div>
+                    <div class="liked-by">
+                        <span><img src="story6.jpg"></span>
+                        <span><img src="profile12.jpg"></span>
+                        <span><img src="profile11.jpg"></span>
+                        <p>liked by <b>Shivam Dubey</b>and <b>3,818 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p> <b>Adarsh Jaiswal</b> love is not a everything, but you remember money is everything
+                            <span class="hash-tag">#love_nothing #money #love_hatters #foolowforfollow</span>
+                        </p>
+                    </div>
+                    <div class=" comments text-muted">
+                        veiw all 1,212 comments
+                    </div>
+                </div>
+               </div>
+               <!------------------------------END OF FEEDS---------------------------->
+            </div>
+              <!-------------------------END OF MIDDLE----------------------------->
+
+            <!---=================RIGHT=======================--->
+            <div class="right">
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Messages</h4><i class="fa-regular fa-message"></i>
+                    </div>
+                    <!-------------------------SEARCH BAR-------------------------->
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" placeholder="search messages" id="message-search">
+                    </div>
+                    <!-----------------------MESSAGE CATAGORY----------------------->
+                    <div class="catagory">
+                        <h6 class="active">primary</h6>
+                        <h6>General</h6>
+                        <h6 class="message-requests">Requests(7)</h6>
+                    </div>
+                     <!----------------------MESSAGE-------------------------->
+                     <div class="message">
+                        <div class="profile-photo">
+                            <img src="feed/feed8.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Edem Quist</h5>
+                            <p class="text-muted">just wake up </p>
+                        </div>
+                     </div>
+                     <!----------------------MESSAGE-------------------------->
+                     <div class="message">
+                        <div class="profile-photo">
+                            <img src="feed/feed04.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Jane Doe</h5>
+                            <p class="text-muted">ok thanks. </p>
+                        </div>
+                     </div>
+                     <!----------------------MESSAGE-------------------------->
+                     <div class="message">
+                        <div class="profile-photo">
+                            <img src="feed/feed1.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Lana Rose</h5>
+                            <p class="text-muted">2 new messages </p>
+                        </div>
+                     </div>
+                     <!----------------------MESSAGE-------------------------->
+                     <div class="message">
+                        <div class="profile-photo">
+                            <img src="profile10 (3).jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Vishal Singh</h5>
+                            <p class="text-muted">What's up bruh! </p>
+                        </div>
+                     </div>
+                     <!----------------------MESSAGE-------------------------->
+                     <div class="message">
+                        <div class="profile-photo">
+                            <img src="feed/feed6.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Franca Deila</h5>
+                            <p class="text-muted">lol u right </p>
+                        </div>
+                     </div>
+                     <!----------------------MESSAGE-------------------------->
+                     <div class="message">
+                        <div class="profile-photo">
+                            <img src="feed/feed05.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Juluit Makarey</h5>
+                            <p class="text-muted">Birthday Tomarrow!</p>
+                        </div>
+                     </div>
+                </div>
+                 <!-----------------------END OF MESSAGES-------------------------->
+
+                  <!------------------------FRIEND REQUESTS------------------------>
+                  <div class="friend-requests">
+                    <h4>Requests</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="feed/feed2.jpg">
+                            </div>
+                            <div>
+                                <h5>Riya Chakrawarti</h5>
+                                <p class="text-muted">
+                                    12 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">
+                                Accept
+                            </button>
+                            <button class="btn">
+                                Decline
+                            </button>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+             <!--========================END OF RIGHT=============================-->
+        </div>
+    </main>
+  
+    <!--========================THEME CUSTOMIZATION=============================-->
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Customize your view</h2>
+            <p class="text-muted">Manage your font size, color, and background</p>
+
+            <!---------------------FONT SIZES------------------------>
+            <div class="font-size">
+                <h4>Font Size</h4>
+                <div>
+                    <h6>Aa</h6>
+                    <div class="choose-size">
+                        <span class="font-size-1"></span>
+                        <span class="font-size-2 active"></span>
+                        <span class="font-size-3"></span>
+                        <span class="font-size-4"></span>
+                        <span class="font-size-5"></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+
+            <!---------------------PRIMARY COLOR--------------------->
+            <div class="color">
+                <h4>color</h4>
+                <div class="choose-color">
+                    <span class="color-1"></span>
+                    <span class="color-2 active"></span>
+                    <span class="color-3"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+
+            <!------------------------BACKGROUND COLOR---------------------------->
+            <div class="background">
+                <h4>Background</h4>
+                <div class="choose-bg">
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5 class="bg-1">Light</h5>
+                    </div>
+                    <div class="bg-2">
+                        <span></span>
+                        <h5>Dim</h5>
+                    </div>
+                    <div class="bg-3">
+                        <span></span>
+                        <h5>Lights Out</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
